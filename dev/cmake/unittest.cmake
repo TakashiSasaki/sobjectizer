@@ -15,5 +15,5 @@ if (ANDROID AND DEFINED ADBRUNNER)
 endif()
 
 add_executable(${UNITTEST} ${UNITTEST_SRCFILES})
-target_link_libraries(${UNITTEST} ${SO_5_SHARED_LIB})
+target_link_libraries(${UNITTEST} ${SO_5_SHARED_LIB} -latomic)
 add_test(NAME ${UNITTEST} COMMAND ${SO_5_TEST_LAUNCHER} ${UNITTEST})

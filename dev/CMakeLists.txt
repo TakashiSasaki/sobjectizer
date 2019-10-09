@@ -5,9 +5,9 @@ if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
 	set(SOBJECTIZER_MASTER_PROJECT ON)
 endif()
 
-option(BUILD_ALL      "Enable building examples and tests [default: OFF]" OFF)
-option(BUILD_EXAMPLES "Enable building examples [default: OFF]"           OFF)
-option(BUILD_TESTS    "Enable building tests    [default: OFF]"           OFF)
+option(BUILD_ALL      "Enable building examples and tests [default: OFF]" ON)
+option(BUILD_EXAMPLES "Enable building examples [default: OFF]"           ON)
+option(BUILD_TESTS    "Enable building tests    [default: OFF]"           ON)
 
 option(SOBJECTIZER_BUILD_STATIC "Build static SObjectizer library [default: ON]" ON)
 option(SOBJECTIZER_BUILD_SHARED "Build shared SObjectizer library [default: ON]" ON)
